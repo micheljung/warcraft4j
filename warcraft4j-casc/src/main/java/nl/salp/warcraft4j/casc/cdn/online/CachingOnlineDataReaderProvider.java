@@ -44,7 +44,6 @@ import static org.apache.commons.lang3.StringUtils.isEmpty;
  * {@link DataReaderProvider} for reading files over HTTP, caching the files prior per version of the CASC the file is in.
  * <p>
  * This implementation has no cache-expiration or cleanup functionality and can consume quite a bit of drive space over time.
- * </p>
  *
  * @author Barre Dijkstra
  */

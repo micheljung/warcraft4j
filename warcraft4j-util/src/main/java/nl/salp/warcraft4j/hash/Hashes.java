@@ -24,7 +24,7 @@ import org.apache.commons.codec.binary.StringUtils;
 
 /**
  * Collection of available hash implementations.
- * <p/>
+ * <p>
  * FIXME Switch from single instances to a thread-safe solution in case an implementation is not stateless.
  *
  * @author Barre Dijkstra

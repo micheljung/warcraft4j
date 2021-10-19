@@ -130,7 +130,6 @@ public class DbcEntry {
      * Get the size of the entry in bytes.
      * <p>
      * Please note that this reads and initialises the entry data if it hasn't been read yet.
-     * </p>
      *
      * @return The size in bytes.
      */
@@ -186,7 +185,6 @@ public class DbcEntry {
      * Get the unparsed entry data.
      * <p>
      * Please note that this reads and initialises the entry data if it hasn't been read yet.
-     * </p>
      *
      * @return The unparsed entry data.
      */

@@ -81,7 +81,6 @@ public abstract class DataType<T> {
      * Check if a byte is a terminator byte for variable length data types.
      * <p>
      * This method may be overwritten by implementations.
-     * </p>
      *
      * @return The {@code true} if the byte is a terminator byte.
      */

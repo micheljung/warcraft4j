@@ -94,7 +94,6 @@ public class CachedHttpDataReader extends ByteArrayDataReader {
      * Read a segment of the data from a file (direct blocking http read).
      * <p>
      * FIXME Currently reads the whole file and passes it with the offset/length to the {@link ByteArrayDataReader}, change to to only read wanted data.
-     * </p>
      *
      * @param url    The URL of the file to read.
      * @param offset The file offset to start reading from.

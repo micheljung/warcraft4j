@@ -65,7 +65,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final String magicString;
 
@@ -78,7 +77,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int headerSize;
     /**
@@ -90,7 +88,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int entryCount;
     /**
@@ -102,7 +99,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int entryFieldCount;
     /**
@@ -114,7 +110,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int entrySize;
     /**
@@ -126,7 +121,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int stringTableBlockSize;
     /**
@@ -137,7 +131,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int stringTableBlockHash;
     /**
@@ -147,7 +140,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
-     * </p>
      * </ul>
      */
     private final int buildNumber;
@@ -159,7 +151,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int timestampLastWritten;
     /**
@@ -169,7 +160,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int minimumEntryId;
     /**
@@ -179,7 +169,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int maximumEntryId;
     /**
@@ -189,7 +178,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int locale;
     /**
@@ -199,7 +187,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final byte[] unknown;
     /**
@@ -209,7 +196,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final int[] rowIndexes;
     /**
@@ -219,7 +205,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      */
     private final short[] rowStringLength;
 
@@ -423,7 +408,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The magic string.
      *
@@ -444,7 +428,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The size.
      *
@@ -465,7 +448,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The number of entries.
      *
@@ -486,7 +468,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The number of fields.
      *
@@ -507,7 +488,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The size in bytes.
      *
@@ -528,7 +508,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The size.
      *
@@ -549,7 +528,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The starting offset.
      *
@@ -570,7 +548,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The size.
      *
@@ -591,7 +568,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The starting offset.
      *
@@ -611,7 +587,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The hash or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -630,7 +605,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The build number or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -649,7 +623,6 @@ public class DbcHeader {
      * <li>{@code DB2}</li>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The timestamp or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -667,7 +640,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The minimum id or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -684,7 +656,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The maximum id or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -701,7 +672,6 @@ public class DbcHeader {
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The locale id or {@link #UNKNOWN_INT} if it was not available on the header.
      *
@@ -715,13 +685,11 @@ public class DbcHeader {
      * Get values of the unknown 4-byte data segment.
      * <p>
      * TODO This is probably an uint32, figure out where it's used for.
-     * </p>
      * <p>
      * Available for
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The data segment or {@link #UNKNOWN_BYTE_ARRAY} if it was not available on the header.
      *
@@ -735,13 +703,11 @@ public class DbcHeader {
      * Get row indexes.
      * <p>
      * TODO Determine the exact usage.
-     * </p>
      * <p>
      * Available for
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The indexes or {@link #UNKNOWN_INT_ARRAY} if it was not available on the header.
      *
@@ -755,13 +721,11 @@ public class DbcHeader {
      * Get row string lengths.
      * <p>
      * TODO Determine the exact usage.
-     * </p>
      * <p>
      * Available for
      * <ul>
      * <li>{@code DB2_EXT}</li>
      * </ul>
-     * </p>
      *
      * @return The string lengths or {@link #UNKNOWN_SHORT_ARRAY} if it was not available on the header.
      *

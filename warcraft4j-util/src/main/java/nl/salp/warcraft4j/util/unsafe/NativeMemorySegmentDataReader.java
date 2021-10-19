@@ -78,8 +78,6 @@ public class NativeMemorySegmentDataReader extends BaseDataReader {
 
     /**
      * {@inheritDoc}
-     *
-     * @throws IOException When the memory segment is closed.
      */
     @Override
     public long size() throws DataReadingException {

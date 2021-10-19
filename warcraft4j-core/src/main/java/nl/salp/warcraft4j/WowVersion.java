@@ -36,7 +36,7 @@ public interface WowVersion {
      *
      * @param version The version to check.
      *
-     * @return {@link true} if both World of Warcraft versions have the same version.
+     * @return {@code true} if both World of Warcraft versions have the same version.
      *
      * @see #getVersion()
      */
@@ -56,7 +56,7 @@ public interface WowVersion {
      *
      * @param version The version to check.
      *
-     * @return {@link true} if both World of Warcraft versions have the same branch.
+     * @return {@code true} if both World of Warcraft versions have the same branch.
      *
      * @see #getBranch()
      */
@@ -76,7 +76,7 @@ public interface WowVersion {
      *
      * @param version The version to check.
      *
-     * @return {@link true} if both World of Warcraft versions have the same region.
+     * @return {@code true} if both World of Warcraft versions have the same region.
      *
      * @see #getRegion()
      */

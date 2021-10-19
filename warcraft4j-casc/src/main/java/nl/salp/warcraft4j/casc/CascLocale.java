@@ -37,14 +37,12 @@ public enum CascLocale {
      * Unknown locale.
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00000001}
-     * </p>
      */
     UNKNOWN_1(0x1),
     /**
      * English (United States).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00000010}
-     * </p>
      *
      * @see Locale#EN_US
      */
@@ -53,7 +51,6 @@ public enum CascLocale {
      * Korean (Republic of Korea).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00000100}
-     * </p>
      *
      * @see Locale#KO_KR
      */
@@ -62,14 +59,12 @@ public enum CascLocale {
      * Unknown locale.
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00001000}
-     * </p>
      */
     UNKNOWN_8(0x8),
     /**
      * French (France).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00010000}   !
-     * </p>
      *
      * @see Locale#FR_FR
      */
@@ -78,7 +73,6 @@ public enum CascLocale {
      * German (Germany).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00100000}   !
-     * </p>
      *
      * @see Locale#DE_DE
      */
@@ -87,7 +81,6 @@ public enum CascLocale {
      * Simplified Chinese (China).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 01000000}   !
-     * </p>
      *
      * @see Locale#ZH_CN
      */
@@ -96,7 +89,6 @@ public enum CascLocale {
      * Spanish (Spain).
      * <p>
      * Mask: {@code 00000000 00000000 00000000 10000000}   !
-     * </p>
      *
      * @see Locale#ES_ES
      */
@@ -105,7 +97,6 @@ public enum CascLocale {
      * Traditional Chinese (Taiwan).
      * <p>
      * Mask: {@code 00000000 00000000 00000001 00000000}   !
-     * </p>
      *
      * @see Locale#ZH_TW
      */
@@ -114,7 +105,6 @@ public enum CascLocale {
      * English (Great Britain).
      * <p>
      * Mask: {@code 00000000 00000000 00000010 00000000}   !
-     * </p>
      *
      * @see Locale#EN_GB
      */
@@ -123,7 +113,6 @@ public enum CascLocale {
      * English (China).
      * <p>
      * Mask: {@code 00000000 00000000 00000100 00000000}   !
-     * </p>
      *
      * @see Locale#EN_CN
      */
@@ -132,7 +121,6 @@ public enum CascLocale {
      * English (Taiwan).
      * <p>
      * Mask: {@code 00000000 00000000 00001000 00000000}   !
-     * </p>
      *
      * @see Locale#EN_TW
      */
@@ -141,7 +129,6 @@ public enum CascLocale {
      * Spanish (Mexico).
      * <p>
      * Mask: {@code 00000000 00000000 00010000 00000000}   !
-     * </p>
      *
      * @see Locale#ES_MX
      */
@@ -150,7 +137,6 @@ public enum CascLocale {
      * Russian (Russia).
      * <p>
      * Mask: {@code 00000000 00000000 00100000 00000000}   !
-     * </p>
      *
      * @see Locale#RU_RU
      */
@@ -159,7 +145,6 @@ public enum CascLocale {
      * Portuguese (Brazil).
      * <p>
      * Mask: {@code 00000000 00000000 01000000 00000000}   !
-     * </p>
      *
      * @see Locale#PT_BR
      */
@@ -168,7 +153,6 @@ public enum CascLocale {
      * Italian (Italy).
      * <p>
      * Mask: {@code 00000000 00000000 10000000 00000000}   !
-     * </p>
      *
      * @see Locale#IT_IT
      */
@@ -177,7 +161,6 @@ public enum CascLocale {
      * Portuguese (Portugal).
      * <p>
      * Mask: {@code 00000000 00000001 00000000 00000000}   !
-     * </p>
      *
      * @see Locale#PT_PT
      */
@@ -186,14 +169,12 @@ public enum CascLocale {
      * No locale.
      * <p>
      * Mask: {@code 00000000 00000000 00000000 00000000}
-     * </p>
      */
     NONE(0),
     /**
      * All locales.
      * <p>
      * Mask: {@code 11111111 11111111 11111111 11111111}
-     * </p>
      */
     ALL(-1);
 

@@ -61,7 +61,7 @@ public class JacksonJsonApiResultParser implements JsonApiResultParser {
 
     /**
      * Create the mapper to use.
-     * <p/>
+     * <p>
      * TODO Move to a different Guice managed class for easy switching of implementations/testing.
      *
      * @return The mapper.

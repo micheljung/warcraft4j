@@ -23,7 +23,7 @@ import nl.salp.warcraft4j.Region;
 
 /**
  * Battle.NET API region.
- * <p/>
+ * <p>
  * Note: there is no API region for China.
  *
  * @author Barre Dijkstra

@@ -26,7 +26,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * Character appearance DTO, which is an optional snippet of the {@link CharacterDTO}.
- * <p/>
+ * <p>
  * <pre>
  * "appearance": {
  *     "faceVariation": int,

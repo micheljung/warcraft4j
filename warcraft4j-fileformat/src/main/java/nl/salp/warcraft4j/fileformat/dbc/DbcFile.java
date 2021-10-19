@@ -245,7 +245,6 @@ public class DbcFile {
      * Get the entry with a specific id.
      * <p>
      * This method performs a linear file read of all entry ids until a match id has been encountered, please note that this can be quite expensive.
-     * </p>
      *
      * @param id The id of the entry.
      *
@@ -326,7 +325,6 @@ public class DbcFile {
      * Parse a value from the string table.
      * <p>
      * If the id does not point to the start of a string table entry, it is considered to be a non-found id and {@code null} is returned.
-     * </p>
      *
      * @param stringTableId The id of the value.
      *
@@ -356,7 +354,6 @@ public class DbcFile {
      * Check if the id is a valid id for a string table entry in the DBC file.
      * <p>
      * Note that this is an expensive operation that parses the DBC file, so it advised to minimise the usage in frequently called code or code that has performance requirements.
-     * </p>
      *
      * @param stringTableId The id.
      *

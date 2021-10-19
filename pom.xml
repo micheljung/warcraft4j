@@ -22,7 +22,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.salp.warcraft4j</groupId>
+    <groupId>io.github.micheljung</groupId>
     <artifactId>warcraft4j</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -30,6 +30,14 @@
     <!-- Project information. -->
     <name>Warcraft4J parent module</name>
     <description>General parent module for all Warcraft4J modules.</description>
+    <url>https://github.com/micheljung/warcraft4j</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <scm>
         <connection>scm:git:https://git@bitbucket.org/barredijkstra/warcraft4j.git</connection>
@@ -74,7 +82,10 @@
         <plugin.maven-resources.version>2.7</plugin.maven-resources.version>
         <plugin.maven-source.version>2.4</plugin.maven-source.version>
         <plugin.maven-jar.version>2.6</plugin.maven-jar.version>
+        <plugin.maven-javadoc-plugin.version>2.10.3</plugin.maven-javadoc-plugin.version>
         <plugin.maven-surefire.version>2.18.1</plugin.maven-surefire.version>
+        <plugin.nexus-staging-maven-plugin.version>1.6.8</plugin.nexus-staging-maven-plugin.version>
+        <plugin.maven-gpg-plugin.version>3.0.1</plugin.maven-gpg-plugin.version>
         <source.encoding>UTF-8</source.encoding>
         <source.version>1.8</source.version>
         <dependency.guice.version>3.0</dependency.guice.version>
@@ -91,6 +102,13 @@
         <dependency.jackson.version>2.5.1</dependency.jackson.version>
         <dependency.neo4j.version>2.2.4</dependency.neo4j.version>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <!-- Build and plugin configuration -->
     <build>
@@ -129,7 +147,6 @@
                     <executions>
                         <execution>
                             <id>attach-sources</id>
-                            <phase>verify</phase>
                             <goals>
                                 <goal>jar-no-fork</goal>
                             </goals>
@@ -139,13 +156,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.3</version>
+                    <version>${plugin.maven-javadoc-plugin.version}</version>
                     <executions>
                         <execution>
-                            <id>attach-sources</id>
-                            <phase>verify</phase>
+                            <id>attach-javadocs</id>
                             <goals>
-                                <goal>jar-no-fork</goal>
+                                <goal>jar</goal>
                             </goals>
                         </execution>
                     </executions>
@@ -162,9 +178,50 @@
                         <threadCount>10</threadCount>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>${plugin.nexus-staging-maven-plugin.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <serverId>ossrh</serverId>
+                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${plugin.maven-gpg-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
 
